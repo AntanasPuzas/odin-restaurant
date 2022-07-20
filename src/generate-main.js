@@ -3,10 +3,14 @@ import { GenerateMenu } from "./generate-menu";
 
 export function GenerateMain() {
     const content = document.querySelector(".content");
+    content.style.height = "100vh";
 
     const main = (document.querySelector("main")
         ? document.querySelector("main")
         : document.createElement("main"));
+
+    main.className = "";
+    main.classList.add("main-main");
 
     const text = document.createElement("div");
 

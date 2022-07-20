@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <appetizers>
+        <item>
+            <italian>Crostini misti con Sottoli</italian>
+            <english>Toasted bread with mixed vegetables in oil</english>
+            <price>3$</price>
+        </item>
+        <item>
+            <italian>Bruschetta calda all'Olio d'Oliva e Aglio</italian>
+            <english>Garlic Bread with olive oil</english>
+            <price>3$</price>
+        </item>
+        <item>
+            <italian>Affettato tipico</italian>
+            <english>Sliced meats: wild boar, deer and roe</english>
+            <price>4$</price>
+        </item>
+    </appetizers>
+    <first_courses>
+        <item>
+            <italian>Tortelli di Ricotta e Bietole al sugo di Carne</italian>
+            <english>Ravioli with ricotta and chard in bolognese sauce</english>
+            <price>15$</price>
+        </item>
+        <item>
+            <italian>Zuppa contadina di verdure fresche Pane e Pecorino Toscano</italian>
+            <english>Rustic vegetable soup with bread and strong Tuscan cheese</english>
+            <price>14$</price>
+        </item>
+    </first_courses>
+    <second_courses>
+        <item>
+            <italian>Il Filetto del "Leccio"</italian>
+            <english>Fillet of the house: fillet cooked with truffle cream, parmesan, rocket and porcini mushrooms</english>
+            <price>15$</price>
+        </item>
+        <item>
+            <italian>Salsiccia alla brace</italian>
+            <english>Barbecued sausage</english>
+            <price>10$</price>
+        </item>
+        <item>
+            <italian>Faraona in teglia con Patate</italian>
+            <english>Roast Guinea Fowl with potatoes</english>
+            <price>20$</price>
+        </item>
+        <item>
+            <italian>Cinghiale alla Cacciatore</italian>
+            <english>Wild boar stewed in tomatoe, wine and herb sauce</english>
+            <price>25$</price>
+        </item>
+        <item>
+            <italian>Rostinciana alla brace</italian>
+            <english>Barbecued rack of ribs</english>
+            <price>20$</price>
+        </item>
+    </second_courses>
+    <side_dishes>
+        <item>
+            <italian>Insalata verde</italian>
+            <english>Green salad</english>
+            <price>3$</price>
+        </item>
+        <item>
+            <italian>Patate fritte</italian>
+            <english>French fries</english>
+            <price>2$</price>
+        </item>
+        <item>
+            <italian>Patate al Rosmarino</italian>
+            <english>Roast potatoes with rosemary</english>
+            <price>2$</price>
+        </item>
+    </side_dishes>
+    <desserts>
+        <item>
+            <italian>Torta della Nonna</italian>
+            <english>"Grandmother's Cake"</english>
+            <price>8$</price>
+        </item>
+    </desserts>
+</menu>
