@@ -48,6 +48,6 @@ export function GenerateHeader() {
     const contact = document.querySelector("header>nav>ul>li:last-child");
     contact.addEventListener("click", () => {
         ClearMain();
-        GenerateContact
+        GenerateContact();
     })
 }

@@ -24,18 +24,14 @@ body::before {
     left: 0;
     filter: blur(2px) brightness(0.35);
     z-index: -1;
-    background-image: url("./main-background.jpg");
-    height: 100%;
+    background: url("./main-background.jpg") no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .content {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
-    height: 100vh;
     padding: 50px 100px;
 }
 
@@ -68,7 +64,6 @@ header>nav>ul>li {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    height: 100%;
 }
 
 .main-main h1 {
@@ -125,7 +120,6 @@ header>nav>ul>li {
     align-items: center;
     gap: 25px;
     padding: 50px;
-    height: auto;
 }
 
 .main-menu>h1 {
@@ -156,6 +150,31 @@ header>nav>ul>li {
 .main-menu>hr {
     width: 250px;
     color: white;
+}
+
+.main-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-contact>div {
+    display: flex;
+    padding: 50px;
+    gap: 70px;
+    align-items: center;
+}
+
+.main-contact>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-self: flex-start;
+    font-size: 1.05rem;
+}
+
+.main-contact>div>img {
+    height: 400px;
 }
 
 footer {

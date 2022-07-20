@@ -3,7 +3,7 @@ import { GenerateMain} from "./generate-main";
 import { GenerateFooter } from "./generate-footer";
 
 import "./style.css";
-import { GenerateMenu } from "./generate-menu";
+import { GenerateContact } from "./generate-contact";
 
 const addContent = (() => {
     const content = document.createElement("div");
@@ -13,5 +13,5 @@ const addContent = (() => {
 
 GenerateHeader();
 // GenerateMain();
-GenerateMenu();
+GenerateContact();
 GenerateFooter();
