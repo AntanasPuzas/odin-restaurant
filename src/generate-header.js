@@ -1,4 +1,7 @@
 import Logo from "./logo.svg"
+import { GenerateMain, ClearMain } from "./generate-main";
+import { GenerateMenu } from "./generate-menu";
+import { GenerateContact } from "./generate-contact";
 
 export function GenerateHeader() {
     const content = document.querySelector(".content");
@@ -10,7 +13,8 @@ export function GenerateHeader() {
     const logo = document.createElement("img")
     logo.src = Logo;
     logo.addEventListener("click", () => {
-        console.log("test");
+        ClearMain();
+        GenerateMain();
     })
 
     const tabList = document.createElement("ul");
@@ -31,16 +35,19 @@ export function GenerateHeader() {
 
     const home = document.querySelector("header>nav>ul>li:first-child");
     home.addEventListener("click", () => {
-        console.log("test");
+        ClearMain();
+        GenerateMain();
     })
 
     const menu = document.querySelector("header>nav>ul>li:nth-child(2)");
     menu.addEventListener("click", () => {
-        console.log("test");
+        ClearMain();
+        GenerateMenu();
     })
 
     const contact = document.querySelector("header>nav>ul>li:last-child");
     contact.addEventListener("click", () => {
-        console.log("test");
+        ClearMain();
+        GenerateContact
     })
 }

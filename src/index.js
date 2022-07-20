@@ -1,6 +1,7 @@
 import { GenerateHeader } from "./generate-header";
-import { GenerateMain } from "./generate-main";
+import { GenerateMain} from "./generate-main";
 import { GenerateFooter } from "./generate-footer";
+
 import "./style.css";
 
 const addContent = (() => {

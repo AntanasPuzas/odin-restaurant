@@ -1,7 +1,12 @@
+import { GenerateContact } from "./generate-contact";
+import { GenerateMenu } from "./generate-menu";
+
 export function GenerateMain() {
     const content = document.querySelector(".content");
 
-    const main = document.createElement("main");
+    const main = (document.querySelector("main")
+        ? document.querySelector("main")
+        : document.createElement("main"));
 
     const text = document.createElement("div");
 
@@ -17,7 +22,8 @@ export function GenerateMain() {
     const menuButton = document.createElement("button");
     menuButton.textContent = "Menu";
     menuButton.addEventListener("click", () => {
-        console.log("test");
+        ClearMain();
+        GenerateMenu();
     });
 
     const divider = document.createElement("div");
@@ -25,11 +31,20 @@ export function GenerateMain() {
     const contactButton = document.createElement("button");
     contactButton.textContent = "Contact";
     contactButton.addEventListener("click", () => {
-        console.log("test");
+        ClearMain();
+        GenerateContact();
     });
 
     text.append(title, paragraph);
     buttonContainer.append(menuButton, divider, contactButton);
     main.append(text, buttonContainer);
-    content.append(main);
+    if (!document.querySelector("main")) {
+        content.append(main);
+    }
+}
+
+export function ClearMain() {
+    const main = document.querySelector("main");
+    const mainElements = [...document.querySelectorAll("main>*")];
+    mainElements.forEach(el => main.removeChild(el));
 }
