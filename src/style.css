@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(2px) brightness(0.35);
+    z-index: -1;
+    background-image: url("./main-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    padding: 50px;
+}
+
+header>nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+header>nav>img {
+    width: 225px;
+    color: black;
+    cursor: pointer;
+}
+
+header>nav>ul {
+    display: flex;
+    gap: 70px;
+    list-style: none;
+    font-size: 1.15rem;
+}
+
+header>nav>ul>li {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+main h1 {
+    font-family: 'The Nautigal', cursive;
+    font-size: 4.5rem;
+}
+
+main>div:first-child>p {
+    margin: 20px auto 0 auto;
+    width: 320px;
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+main>.button-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-right: 9px;
+}
+
+main>.button-container>button {
+    width: 100px;
+    height: auto;
+    border: none;
+    color: white;
+    background-color: #00000000;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+
+main>.button-container>button:hover {
+    background-color: #1A4314;
+}
+
+main>.button-container>button:first-child {
+    justify-self: end;
+}
+
+main>.button-container>div {
+    width: 1px;
+    height: 50px;
+    background-color: white;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto 1fr;
+    gap: 8px;
+    align-items: center;
+}
+
+footer a:link {
+    color: white;
+}
+
+footer a:visited {
+    color: white;
+}
+
+footer>p:first-child {
+    grid-column: 2 / 3;
+    justify-self: end;
+}
+
+footer>p:nth-child(2) {
+    grid-column: 4 / 5;
+}
+
+footer>div {
+    background-color: white;
+    grid-column: 3 / 4;
+    height: 100%;
+    width: 1px;
+}
+
+footer>p:last-child {
+    grid-column: 5 / 6;
+    justify-self: end;
+}
